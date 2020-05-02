@@ -1,0 +1,77 @@
+
+@copyright-bg-color: #47474d;
+@site-bg-color: #f8f8f8;
+@top-bg-color: #f5f5f5;
+@header-bg-color: #fff;
+
+@link-height: 24px;
+
+@family-nomal:'Microsoft YaHei','PingFang SC';
+
+@width-full: 1200px;
+@box-shadow: 0 -1px 0 0 #eee;
+
+@color-blue: #5987e8;
+@color-star: #ffcb2a;
+@color-btn-hover: #497ae1;
+@color-dash: #e5e5e5;
+
+@tab-selected-bg:@color-blue;
+@tab-selected-color:#fff;
+@tab-unselected-bg:#fff;
+@tab-unselected-color:@color-blue;
+
+@font-color-main: #404040;
+@font-color-secondary: #707070;
+@font-color-link: #7C7070;
+@font-color-highlight: #fff;
+@tooltip-color: #606060;
+
+@font-size-s: 12px;
+@font-size-m: 14px;
+@font-size-l: 16px;
+@font-size-xl: 18px;
+@font-size-xxl: 20px;
+
+@banner-height: 420px;
+@nav-height: 40px;
+@nav-cate-width: 224px;
+@nav-cate-content-height: @banner-height;
+
+@user-info-width: 224px;
+@user-info-height: 380px;
+
+@price-color: #ff4100;
+@border-width-normal: 1px;
+
+@app-width: 900px;
+
+@border-radius-normal: 6px;
+.bottom-bg {
+  background-color: #fff;
+  box-shadow: @box-shadow;
+}
+.no-wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+.hr-dashed {
+  border: 0;
+  border-top: 1px dashed #e6e6e6;
+}
+
+html,body {
+  min-width: @width-full;
+}
+
+.ant-tooltip {
+  .ant-tooltip-inner {
+    color: @tooltip-color;
+    background: #fff;
+  }
+  .ant-tooltip-arrow {
+    border-left-color: rgba(255, 255, 255, 1);
+  }
+}
