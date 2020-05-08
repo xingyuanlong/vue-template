@@ -21,6 +21,8 @@ const compiler = webpack(webpackConfig);
 debug('webpack编译完成');
 debug('将编译流通过webpack-dev-middleware');
 const devMiddleware = require('webpack-dev-middleware')(compiler, {
+  // 设置中间件的公共路径，值与webpack的公共路径相同
+  // 这个路径就是内存中存储的文件所在的路径
   publicPath: webpackConfig.output.publicPath,
   lazy: false,
   stats: {

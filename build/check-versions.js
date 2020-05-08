@@ -29,7 +29,7 @@ module.exports = function () {
 
   for (let i = 0; i < versionRequirements.length; i++) {
     const mod = versionRequirements[i]
-
+    // 判断现有版本是否满足要求
     if (!semver.satisfies(mod.currentVersion, mod.versionRequirement)) {
       warnings.push(mod.name + ': ' +
         chalk.red(mod.currentVersion) + ' should be ' +

@@ -15,3 +15,10 @@ export function postApi (params) {
     data: params
   });
 }
+
+/**
+ * getFrontCategoryApi
+ */
+export function getFrontCategoryApi () {
+  return request('/api/getFrontCategory');
+}

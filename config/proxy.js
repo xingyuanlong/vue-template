@@ -41,7 +41,7 @@ module.exports = {
     // Rap Mock平台,无需token认证,修改本文件需要重启应用
     rap: {
       host: `****`, //项目ID
-      urls: ["/api/eco/aaa/bb/*"]
+      urls: ["/api/aaa/bb/*"]
     }
   },
   // 配置登录用户

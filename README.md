@@ -75,5 +75,6 @@ npm run build --report
 - `npm run testbuild` 项目测试环境编译命令
 - `npm run build` 项目生产环境编译命令
 - `npm run lint-fix` eslint fix
+- 可以修改 config/index.js  build 中 assetsPublicPath 配置cdn地址
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

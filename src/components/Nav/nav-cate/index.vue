@@ -13,7 +13,7 @@
 
 <script>
 import CateItem from './cate-item';
-import { getFrontCategory } from '@/services';
+import { getFrontCategoryApi } from '@/services';
 function mapCate (category) {
   return Array.prototype.map.call(category, (item) => {
     if (!item.children || !item.children.length) {
@@ -116,7 +116,7 @@ export default {
     };
   },
   created () {
-    getFrontCategory().then(res => {
+    getFrontCategoryApi().then(res => {
       if (res.success) {
         // let testArr = [
         //   {

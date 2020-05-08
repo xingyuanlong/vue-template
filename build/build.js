@@ -14,11 +14,13 @@ const webpackConfig = require('./webpack.prod.conf')
 const spinner = ora(`building for ${process.env.NODE_ENV } ...`)
 spinner.start()
 
+// 清除之前打包的资源
 rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
   if (err) throw err
   webpack(webpackConfig, (err, stats) => {
     spinner.stop()
     if (err) throw err
+    // 配置编译信息的显示样式
     process.stdout.write(stats.toString({
       colors: true,
       modules: false,

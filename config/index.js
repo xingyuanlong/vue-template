@@ -49,10 +49,11 @@ module.exports = {
     // Template for index.html
     index: path.resolve(__dirname, "../dist/index.html"),
 
-    // Paths
+    // Paths 打包路径
     assetsRoot: path.resolve(__dirname, "../dist"),
     assetsSubDirectory: "static",
-    assetsPublicPath: "***", // 配置上传的CDN 地址
+    // assetsPublicPath: "***", // 配置上传的CDN 地址
+    assetsPublicPath: "/",
 
     /**
      * Source Maps
